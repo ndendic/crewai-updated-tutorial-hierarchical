@@ -1,0 +1,41 @@
+{
+    "object": "database", 
+    "id": "836f0824-9dcc-4e16-ab64-a98f8d42abb0", 
+    "cover": None, 
+    "icon": {"type": "external", "external": {"url": "https://www.notion.so/icons/checkmark-line_gray.svg"}}, 
+    "created_time": "2023-07-03T10:52:00.000Z", 
+    "created_by": {"object": "user", "id": "51cdf883-3022-4fd5-95eb-34f97e472c3f"}, 
+    "last_edited_by": {"object": "user", "id": "51cdf883-3022-4fd5-95eb-34f97e472c3f"}, 
+    "last_edited_time": "2024-05-16T10:07:00.000Z", 
+    "title": [{
+        "type": "text", 
+        "text": {"content": "Tasks", "link": None}, 
+        "annotations": {"bold": False, "italic": False, "strikethrough": False, "underline": False, "code": False, "color": "default"}, 
+        "plain_text": "Tasks", "href": None}
+        ], 
+    "description": [], 
+    "is_inline": False, 
+    "properties": {
+        "Blocking": {"id": "%3DrK_", "name": "Blocking", "type": "relation", "relation": {"database_id": "836f0824-9dcc-4e16-ab64-a98f8d42abb0", "type": "dual_property", "dual_property": {"synced_property_name": "Blocked by", "synced_property_id": "th%5Bu"}}}, 
+        "Do Date": {"id": "%3D~kb", "name": "Do Date", "type": "date", "date": {}}, 
+        "Done": {"id": "DTa%5B", "name": "Done", "type": "checkbox", "checkbox": {}}, 
+        "Sub-tasks 1": {"id": "Fndl", "name": "Sub-tasks 1", "type": "relation", "relation": {"database_id": "836f0824-9dcc-4e16-ab64-a98f8d42abb0", "type": "dual_property", "dual_property": {"synced_property_name": "Parent task", "synced_property_id": "k_C%5D"}}}, 
+        "Time": {"id": "GBAt", "name": "Time", "type": "formula", "formula": {"expression": "if(formatDate({{notion:block_property:%3D~kb:4ee11631-e1c3-4ba8-89a0-62a09f6130be:080aa73a-4753-436b-8339-3cb8edce6f6a}}, "LT") == "12:00 AM", "Any Time", (formatDate({{notion:block_property:%3D~kb:4ee11631-e1c3-4ba8-89a0-62a09f6130be:080aa73a-4753-436b-8339-3cb8edce6f6a}}, "h:mma") + "-") + formatDate(dateEnd({{notion:block_property:%3D~kb:4ee11631-e1c3-4ba8-89a0-62a09f6130be:080aa73a-4753-436b-8339-3cb8edce6f6a}}), "h:mma"))"}}, 
+        "Parent task": {"id": "k_C%5D", "name": "Parent task", "type": "relation", "relation": {"database_id": "836f0824-9dcc-4e16-ab64-a98f8d42abb0", "type": "dual_property", "dual_property": {"synced_property_name": "Sub-tasks 1", "synced_property_id": "Fndl"}}}, 
+        "Blocked by": {"id": "th%5Bu", "name": "Blocked by", "type": "relation", "relation": {"database_id": "836f0824-9dcc-4e16-ab64-a98f8d42abb0", "type": "dual_property", "dual_property": {"synced_property_name": "Blocking", "synced_property_id": "%3DrK_"}}}, 
+        "Complete": {"id": "xl%5E%40", "name": "Complete", "description": "", "type": "button", "button": {}}, "Name": {"id": "title", "name": "Name", "type": "title", "title": {}}, 
+        "Special Type": {"id": "notion%3A%2F%2Ftasks%2Ftags_property", "name": "Special Type", "type": "multi_select", "multi_select": {"options": [{"id": "Mobile", "name": "Habit", "color": "yellow", "description": None}, {"id": "Website", "name": "Time slot", "color": "blue", "description": None}, {"id": "7a60a846-b981-4ef9-809e-4fcfb90ec928", "name": "Daily habit", "color": "red", "description": None}, {"id": "56884a3e-f121-405c-980a-be9ffde545ad", "name": "Shopping item", "color": "orange", "description": None}]}}, "Assignee": {"id": "notion%3A%2F%2Ftasks%2Fassign_property", "name": "Assignee", "type": "people", "people": {}}, 
+        "Status": {"id": "notion%3A%2F%2Ftasks%2Fstatus_property", "name": "Status", "type": "status", "status": {"options": [{"id": "not-started", "name": "Not Planned", "color": "default", "description": None}, {"id": "in-progress", "name": "Planned", "color": "blue", "description": None}, {"id": "done", "name": "Done", "color": "green", "description": None}, {"id": "archived", "name": "Archived", "color": "gray", "description": None}], "groups": [{"id": "todo-status-group", "name": "To-do", "color": "gray", "option_ids": ["not-started"]}, {"id": "in-progress-status-group", "name": "In Progress", "color": "blue", "option_ids": ["in-progress"]}, {"id": "complete-status-group", "name": "Complete", "color": "green", "option_ids": ["done", "archived"]}]}}, 
+        "Due": {"id": "notion%3A%2F%2Ftasks%2Fdue_date_property", "name": "Due", "type": "date", "date": {}}, 
+        "Priority": {"id": "notion%3A%2F%2Ftasks%2Fpriority_property", "name": "Priority", "type": "select", "select": {"options": [{"id": "priority_low", "name": "Low", "color": "green", "description": None}, {"id": "priority_medium", "name": "Medium", "color": "yellow", "description": None}, {"id": "priority_high", "name": "High", "color": "red", "description": None}]}}, 
+        "Sub-tasks": {"id": "notion%3A%2F%2Ftasks%2Fsub_task_relation", "name": "Sub-tasks", "type": "relation", "relation": {"database_id": "836f0824-9dcc-4e16-ab64-a98f8d42abb0", "type": "dual_property", "dual_property": {"synced_property_name": "Parent-task", "synced_property_id": "notion%3A%2F%2Ftasks%2Fparent_task_relation"}}}, 
+        "Summary": {"id": "notion%3A%2F%2Ftasks%2Fai_summary_property", "name": "Summary", "type": "rich_text", "rich_text": {}}, 
+        "Parent-task": {"id": "notion%3A%2F%2Ftasks%2Fparent_task_relation", "name": "Parent-task", "type": "relation", "relation": {"database_id": "836f0824-9dcc-4e16-ab64-a98f8d42abb0", "type": "dual_property", "dual_property": {"synced_property_name": "Sub-tasks", "synced_property_id": "notion%3A%2F%2Ftasks%2Fsub_task_relation"}}}
+        }, 
+    "parent": {"type": "block_id", "block_id": "b5f09a1a-548f-4fcb-83dc-0cdbfc3bc7a5"}, 
+    "url": "https://www.notion.so/836f08249dcc4e16ab64a98f8d42abb0", 
+    "public_url": None, 
+    "archived": False, 
+    "in_trash": False, 
+    "request_id": "e9c29914-c105-465d-b4f5-0696228d1a03"
+}

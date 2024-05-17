@@ -1,5 +1,6 @@
 from crewai import Agent
 from tools.search_tools import SearchTools
+from tools.notion_tools import Notion
 
 
 class AINewsLetterAgents():

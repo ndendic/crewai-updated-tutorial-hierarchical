@@ -6,6 +6,7 @@ from pprint import pprint
 import typing
 import json
 # from tools import Tool
+# NOTION_TOKEN = os.environ['NOTION_TOKEN']
 NOTION_TOKEN = 'secret_iGUKBFJBfRc6QLYpJ7le1JMPNsUq0VJNWFbI3RRR4Qj'
 
 notion = Client(auth=NOTION_TOKEN)
@@ -34,6 +35,7 @@ class Notion():
         json_results = json.dumps(trimmed_results)
 
         return json_results
-    @tool("Crate page in Notion")
-    def crete_task(task: str):
-        notion.pages.create(task=task)
+    # TODO: Add more tools
+    # @tool("Crate Task page in Notion")
+    # def crete_task(task: str):
+    #     notion.databases.list()
